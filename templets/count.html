@@ -1,0 +1,19 @@
+<h1>there are {{wordlist}} in text</h1>
+
+<a href="{%url 'home'%}">START AGAIN</a>
+
+<h1>your text</h1>
+
+{{fultext}}
+
+
+<h1>words in text</h1>
+
+{% for word,countnum in worddict %}
+
+{{word}} --- {{countnum}}
+
+<br />
+<br/>
+
+{%endfor%}
